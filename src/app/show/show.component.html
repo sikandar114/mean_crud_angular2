@@ -1,0 +1,46 @@
+  <div class="panel panel-default" >
+  <div class="panel-heading">Employee detail Form : You can see the detail information of an employee in this page of the EMS Apps.</div>
+  <div class="panel-body">
+    <form class="form-horizontal" *ngIf=employee>
+  <div class="form-group">
+    <label for="emp_name" class="col-sm-2 control-label">Employee's Full Name : </label>
+    <div class="col-sm-9">
+      <p class="form-control">{{employee.name}}</p> 
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="position" class="col-sm-2 control-label">Job Position : </label>
+    <div class="col-sm-9">
+     <p class="form-control">{{employee.position}}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="department" class="col-sm-2 control-label">Department Name : </label>
+    <div class="col-sm-9">
+     <p class="form-control">{{employee.department}}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="salary" class="col-sm-2 control-label">Employee's Salary : </label>
+    <div class="col-sm-9">
+      <p class="form-control">{{employee.salary}}</p>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="id" class="col-sm-2 control-label">Employee's ID : </label>
+    <div class="col-sm-9">
+      <p class="form-control">08df088d89dsfhjf87</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      
+      <a class="btn btn-info" (click)="goBack()">Cancel</a>
+    </div>
+   
+  </div>
+</form>
+
+  </div>
+</div>
